@@ -1,8 +1,11 @@
 package com.email.manager.models;
 
+import lombok.Data;
+
 import java.util.List;
 
-public class EmailModel {
+@Data
+public class RenderedEmailModel {
 
 
     private List<String> receivers;

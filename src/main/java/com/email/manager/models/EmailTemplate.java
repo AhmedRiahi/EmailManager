@@ -1,15 +1,17 @@
 package com.email.manager.models;
 
-import com.email.manager.models.markup.MarkupModel;
+import com.email.manager.models.markup.MarkupMeta;
+import lombok.Data;
 
-import java.util.List;
 import java.util.Set;
 
+@Data
 public class EmailTemplate {
 
+    private String name;
     private String subject;
     private String content;
 
-    private Set<MarkupModel> subjectMarkups;
-    private Set<MarkupModel> contentMarkups;
+    private Set<MarkupMeta> subjectMarkups;
+    private Set<MarkupMeta> contentMarkups;
 }

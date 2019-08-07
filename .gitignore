@@ -1,4 +1,4 @@
 
 .idea/**
-EmailManager.iml
 target/**
+*.iml
